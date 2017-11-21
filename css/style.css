@@ -1,0 +1,217 @@
+
+body{overflow: hidden}
+.logo{
+    display: block;
+    margin-top: -7px;
+    margin-bottom: -10px;
+    max-width: 40px;
+}
+.arrow{
+    border: 6px solid transparent;                
+    border-top-color: red;
+    width: 0;
+    height: 0;
+    position: relative;
+    top:3px;
+    left: 10px;
+    /*margin: 0 auto;  /* 居中显示*/
+}
+.legendPanel{
+    position: absolute;    
+    background-color: #202020;
+    opacity: 0.9;
+    bottom: 50px;
+    right: 10px;
+    height: auto;
+    width: auto;  
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 3px;
+}
+.legend-row{
+    margin: 5px;
+}
+.legend-color{
+	display:inline-block;
+	width:40px;
+	height:15px;
+	background-color:#336600;	
+	vertical-align:middle
+}
+.legend-text{
+	display:inline-block;
+	width:60px;
+	height:20px;
+	line-height:20px;	
+    font-size: 10px;
+    color: white;
+	vertical-align:middle;
+    margin-left: 10px;
+}
+.site-aqi {
+    font-family: Roboto,Sans-Serif;
+    font-size: 16px;
+    padding: 4px 6px;
+    line-height: 100%;
+    min-width: 16px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    box-shadow: 2px 2px 2px #888888;
+}
+.site-name{
+    font-family: Roboto,Sans-Serif;
+    font-size: 16px;
+    padding: 4px 4px;
+    line-height: 100%;
+    min-width: 16px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    display: none;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.outdiv{
+    position: absolute;    
+    border-radius: 3px;
+    white-space: nowrap;
+    height: 16px;
+    
+}
+.sitePanel-head{
+    color: white;
+    font-family: Roboto,Sans-Serif;
+    font-size: 16px;
+    padding: 10px 4px;
+    line-height: 100%;
+    border-radius: 3px;    
+}
+.statPanel{
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 3px;
+    background-color: #202020;
+    opacity: 0.9;
+    padding: 10px 10px;
+    height: 60px;
+}
+.sitePanel{
+    background-color: #202020;
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 3px;
+    width: 300px;
+    height:auto;
+    max-height: 500px;
+    overflow-y:scroll;
+    opacity: 0.9;
+}
+.sitePanel::-webkit-scrollbar{
+    display: none;
+}
+
+.btn-env-stat:hover{
+    background-color: #000000;
+    opacity: 1;
+    color: white;
+}
+.btn-env-stat{
+    background-color: #000000;
+    opacity: 0.8;
+    color: white;
+}
+.btn-env-close{
+    background-color: #C8C8C8;
+   
+    color: white;
+}
+.note{
+    position: absolute; 
+    white-space: nowrap;
+}
+.note-point{
+    float: left;
+    background-image: url(img/note-head.png);
+    width: 12px;
+    height: 24px;
+}
+.note-aqi{
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+.note-title{
+    float: left;
+    height: 24px;  
+    color: white;
+    background-color: brown;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.note-circle{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    margin: 8 auto;
+}
+[level=green]{
+    background-color: #336600;
+}
+[level=yellow]{
+    background-color: #FFCC66;
+}
+[level=orange]{
+    background-color: #FF6600;
+}
+[level=red]{
+    background-color: #CC0000;
+}
+[level=purple]{
+    background-color: #990099;    
+}
+[level=maroon]{
+    background-color: #660033;
+}
+[level=default]{
+    background-color: #3366CC;
+}
+[level=none]{
+    background-color: #606060;
+}
+
+[arrow_level=green]{
+    border-top-color: #336600;
+}
+[arrow_level=yellow]{
+    border-top-color: #FFCC66;
+}
+[arrow_level=orange]{
+    border-top-color: #FF6600;
+}
+[arrow_level=red]{
+    border-top-color: #CC0000;
+}
+[arrow_level=purple]{
+    border-top-color: #990099;    
+}
+[arrow_level=maroon]{
+    border-top-color: #660033;
+}
+[arrow_level=default]{
+    border-top-color: #3366CC;
+}
+[arrow_level=none]{
+    border-top-color: #606060;
+}
